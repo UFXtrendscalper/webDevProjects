@@ -9,10 +9,10 @@ html, body {
 
 body {
     background-image: url('./images/dall_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
 }
-
-/* [img]https://i.imgur.com/HBTQCcX.png[/img] */
 
 h1 {
     font-size: 40px;
