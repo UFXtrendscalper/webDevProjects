@@ -1,0 +1,153 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-image: url('./images/dall_bg.png');
+    padding: 10px;
+}
+
+/* [img]https://i.imgur.com/HBTQCcX.png[/img] */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header {
+    margin: 10px;
+    height: 20%;
+}
+
+header img {
+    position: absolute;
+    right: 20px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+header p {
+    margin-top: 50px;
+}
+
+#main {
+    position: relative;
+    height: 70%;
+}
+
+#navList {
+    list-style-type: none;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+    margin-left: 20px;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navList li {
+    height: 18%
+}
+
+#navList li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.selectedNavItem {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#infoContainer {
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    bottom: 20px;
+    right: 10%;
+    left: 25%;
+    height: 90%;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}
+
+.infoDivs {
+    display: none;
+}
+
+.infoDivs h2 {
+    margin-bottom: 40px;
+}   
+
+#bio {
+    display: block;
+}
+
+#contactInfo {
+    display: none;
+    background-color: #A6B0B8;
+    position: fixed;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+    color: black;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+}
+/* media settings */
+@media (max-width: 500px){
+    #navList {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #infoContainer {
+        margin-left: 10px;
+        
+    }
+    #contactInfo {
+        width: 40%;
+        left: 30%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    #navList {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    #infoContainer {
+        margin-left: 5px;
+        
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    header img {
+        width: 50px;
+        right: 5px;    
+    }    
+}    

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Tutorial</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/spaceman.png" 
+            onmouseover="showContactInfo()" 
+            onmouseout="hideContactInfo()"
+            alt="profile image" width="75">
+        <h1>Space Webpage</h1>
+        <p>Welcome, to my final frontier.</p>
+    </header>
+    <div id="main">
+        <ul id="navList">
+            <li onclick="showDivs(0)">Bio</li>
+            <li onclick="showDivs(1)">Education</li>
+            <li onclick="showDivs(2)">Work</li>
+            <li onclick="showDivs(3)">Projects</li>
+            <li onclick="showDivs(4)">Interests</li>
+        </ul>
+        <div id="infoContainer">
+            <div id="bio" class="infoDivs">
+                <h2>Bio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed eveniet quisquam nisi minima
+                    labore voluptatem vitae quidem accusamus tempora voluptatum doloremque placeat consequuntur, dolorem
+                    nesciunt debitis ullam iure dolore?</p>
+            </div>
+            <div id="education" class="infoDivs">
+                <h2>Education</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tenetur at similique repudiandae nostrum
+                    debitis nobis sapiente a, enim quas iusto iste, repellat voluptates reprehenderit.</p>
+            </div>
+            <div id="work" class="infoDivs">
+                <h2>Work</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea similique autem provident ipsum
+                    eaque eveniet obcaecati necessitatibus quasi blanditiis non consectetur, cupiditate labore aliquid.
+                </p>
+            </div>
+            <div id="projects" class="infoDivs">
+                <h2>Projects</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempora incidunt ea aliquam, ab
+                    repudiandae unde at dolorem dolore optio sequi culpa! Temporibus doloremque quisquam ut?</p>
+            </div>
+            <div id="interests" class="infoDivs">
+                <h2>Interests</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed aliquid sapiente ab ut minima nam
+                    deleniti quas dolorum veritatis, qui iure temporibus reprehenderit dolores corrupti.</p>
+            </div>
+        </div>
+        <div id="contactInfo">
+            <p>Sean Gilbank</p>
+            <p>sg@gmail.com</p>
+            <p>+1 222 333 4444</p>
+        </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
