@@ -51,7 +51,7 @@ html, body {
 }
 
 img {
-    margin-top: 16px;
+    margin-top: 20px;
     margin: 24px;
     border-radius: 50%;
 }
@@ -66,7 +66,7 @@ p {
     font-weight: 400;
 }
 #description {
-    margin: 0;
+    margin: 5px 0px;
     padding: 1px;
     color: hsl(75, 94%, 57%);
     font-size: 14px;
@@ -79,13 +79,13 @@ p {
 
 #links {
     width: 100%;
-    margin-bottom: 24px;    
+    margin-bottom: 30px;
 }
 
 .links {
-    margin: 12px 40px;
+    width: 75%;
+    margin: 10px 40px;
     padding: 15px;
-    list-style: none;
     text-align: center;
     background: hsl(0, 0%, 20%);
     border-radius: 8px;
@@ -105,6 +105,15 @@ p {
     font-weight: bold;
 }
 
+#links ul {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
 
 footer {
     position: absolute;
