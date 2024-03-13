@@ -1,0 +1,215 @@
+:root {
+    /* CSS setup */
+    /* Primary colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --white-coffee: rgba(227, 221, 215, 0.8);
+
+    /* Font Setup */
+    --font-young-serif: 'Young Serif', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+  }
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: var(--nutmeg);
+    font-family: var(--font-young-serif);
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 24px 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+li {
+    font-family: var(--font-outfit);
+}
+
+#card {
+    margin: 150px 0 150px 0;
+    width: 736px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: var(--white);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-image {
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+h1 {
+    font-family: var(--font-young-serif);
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0 0 15px 0;
+}
+
+#title p {
+    color: var(--wenge-brown);   
+    margin: 0; 
+}
+
+#text-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#preperation {
+    background: var(--rose-white);
+    padding: 28px;
+    margin: 32px 0 32px 0;
+}
+
+#preperation h3 {
+    color: var(--dark-raspberry);
+    font-family: var(--font-outfit);
+    font-size: 20px;
+    margin: 0 0 16px 0;
+}
+
+#preperation ul {
+    list-style: disc outside none;
+    margin: 0;
+    padding: 0 20px 0 22px;
+}
+
+#preperation li {
+    color: var(--dark-raspberry);
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#preperation span {
+    color: var(--wenge-brown);
+}
+
+#ingredients ul {
+    list-style: disc outside none;
+    margin: 0;
+    padding: 0 0px 0 22px;
+}
+
+#ingredients li {
+    color: var(--nutmeg);
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+#ingredients span {
+    color: var(--wenge-brown);
+}
+
+#instructions ol {
+    margin: 0;
+    padding: 0 0 0 22px;
+}
+
+#instructions li {
+    font-weight: 700;
+    color: var(--nutmeg);
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+#instructions span {
+    color: var(--wenge-brown);
+    font-weight: 400;
+}
+
+
+.line {
+    border: 1px solid var(--white-coffee); 
+    margin: 32px 0 32px 0;
+}
+
+.table-spacer {
+    border: 1px solid var(--white-coffee);
+    margin: 10px 0 10px 0;       
+}
+
+.table-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.table-cell {
+    width: 100%;
+    padding-left: 20px;  
+    color: var(--nutmeg);
+    font-weight: 700;
+    font-family: var(--font-outfit);
+}
+
+.table-cell span {
+    color: var(--wenge-brown);
+    font-weight: 400;
+}
+
+footer {
+    font-family: var(--font-outfit);
+    font-weight: 900;    
+    color: var(--nutmeg);
+    margin: 20px 0 20px 0;
+}
+
+
+@media (max-width: 800px) {
+    #card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    #card {
+        margin: 75px 0 75px 0;
+        padding: 0;
+    }
+
+    #text-content {
+        padding: 0 0 20px 0;
+    
+    }
+
+    #text-content div {
+        padding: 0 20px 0px 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
