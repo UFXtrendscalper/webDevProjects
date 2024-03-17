@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluid Typography, Space & Layouts</title>
+    <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <main class="wrapper flow">
+        <h1 class="visually-hidden">HTML, CSS and a sprinkling of JavaScript…</h1>
+        <div aria-hidden="true" class="header flow">
+          <div class="header__display-text">HTML, CSS</div>
+          <div>and a sprinkling of</div>
+          <div class="header__display-text">JavaScript</div>
+        </div>
+        <p>It’s all you need to build a solid, resillient and importanty, inclusive front-end that everyone can enjoy, regardless of their device power, connection speed and environment.</p>
+        <h2>How to get it done</h2>
+        <div class="steps">
+          <ul class="auto-grid" role="list">
+            <li class="card flow">
+              <h3>Progressive Enhancement</h3>
+              <p>Build for everyone, not just those with fast connections and devices.</p>
+            </li>
+            <li class="card flow">
+              <h3>Modern CSS</h3>
+              <p>CSS is so powerful and most of the new features like layout, logical properties, custom properties and useful units are fully supported in all browsers.</p>
+            </li>
+            <li class="card flow">
+              <h3>Semantic HTML</h3>
+              <p>Using semantic HTML elements helps everyone. It’s amazingly useful for assistive tech, like screen readers. If the CSS doesn’t load, the page will still make sense. You get all the right JavaScript events, too. Everyone is a winner.</p>
+            </li>
+            <li class="card flow">
+              <h3>Go low tech</h3>
+              <p>The lower tech you go, the least likely it is that your page will break. And it will break. The vast majority of internet users don’t use hi-spech devices with fast connections. Build for them, not for yourself.</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="wrapper" role="contentinfo">
+        <div class="cluster">
+          <svg with="3em" height="3em" viewBox="0 0 60 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)">
+              <path opacity=".16" d="M4.841 13.334.208 16.005 23.34 29.332l4.672-2.643L4.84 13.334ZM27.974 37.372l-4.634 2.67.039 16.026 4.634-2.67-.039-16.026ZM27.974 26.842l-4.634 2.671.039 5.189 4.634-2.672-.039-5.188Z" fill="#838383" />
+              <path opacity=".1" d="M55.159 13.332 31.988 26.687l4.625 2.67L59.79 15.998l-4.631-2.667ZM32.074 26.756l-.086 26.64 4.633 2.67.084-26.644-4.631-2.666Z" fill="#838383" />
+              <g opacity=".13">
+                <path opacity=".85" d="m6.889 5.404-.094 5.288L29.966 23.94l23.172-13.248-.12-5.28L29.967 18.78 6.89 5.404Z" fill="#838383" />
+              </g>
+              <g opacity=".11">
+                <path opacity=".71" d="M39.135 2.848 25.322 10.69l4.635 2.671 9.148-5.173.03-5.34Z" fill="#838383" />
+              </g>
+              <path opacity=".07" d="m50.504 26.83-9.248 5.201v5.463l13.926-8.054-4.678-2.61Z" fill="#838383" />
+              <path opacity=".05" d="m55.123 29.151-4.619-2.322 4.619-2.7v5.022Z" fill="#838383" />
+              <path opacity=".07" d="m55.124 34.699-13.78 8.005-.127 5.353L59.802 37.31l-4.678-2.611Z" fill="#838383" />
+              <path opacity=".1" d="m9.374 26.688-4.634 2.67-.038-5.188 4.672 2.518Z" fill="#838383" />
+              <path opacity=".1" d="m9.067 26.842-4.264 2.517L23.34 40.042l4.634-2.67-18.907-10.53ZM4.718 34.865.454 37.383l18.29 10.676v-5.343l-14.026-7.85Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m4.841 13.095 23.38 13.474v5.58l-4.427 2.553 4.426 2.55v16.265l-4.841 2.79L0 42.833v-5.58l4.426-2.551L0 32.15V15.886l4.841-2.791Zm0 .478L.415 16.125V31.91l4.841 2.79-4.841 2.79v5.103l22.964 13.235 4.426-2.55V37.49l-4.841-2.79 4.841-2.79v-5.103L4.841 13.573Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m.087 16.18.208-.36L23.368 29.12l4.53-2.611.208.358-4.738 2.731L.088 16.18ZM23.548 40.037v16.058h-.415V40.037h.415ZM4.942 34.522l14.01 8.075v5.821L.1 37.552l.207-.359 18.231 10.508v-4.865L4.734 34.88l.208-.359ZM4.72 29.18l4.424-2.624.212.356-4.424 2.624-.212-.356Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m4.596 23.824 18.537 10.52v-5.012h.415v5.725L5.011 24.536v4.703l18.33 10.564 4.53-2.61.207.358-4.738 2.73L4.596 29.48v-5.655ZM55.159 13.093 60 15.883V32.15L41.464 42.833v4.864L60 37.013v5.819L36.621 56.305l-4.841-2.791V26.567l23.379-13.474Zm0 .478L32.195 26.807v26.469l4.426 2.551 22.964-13.235v-4.861L41.049 48.414v-5.82L59.585 31.91V16.122l-4.426-2.55Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M55.404 23.638v5.757L41.05 37.748v-5.836l14.355-8.274Zm-13.94 8.513v4.876l13.525-7.87v-4.802l-13.525 7.796Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m55.058 29.463-4.7-2.47.194-.366 4.7 2.47-.194.366ZM59.894 16.178 36.613 29.596l-4.74-2.732.208-.359 4.532 2.612L59.686 15.82l.208.359Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M36.79 29.322v26.763h-.414V29.322h.415ZM55.256 34.518l4.678 2.611-.202.362-4.679-2.611.203-.362Z" fill="#838383" />
+              <path d="m34.633.574 4.142 2.387v5.702l.74-.414 8.996-4.998 4.129 2.384v4.77L29.966 23.473 7.293 10.405v-4.77l4.142-2.387 9.03 5.204.25.143.248-.143L34.633.573v.001Zm0-.575L20.714 8.021l-9.28-5.348-4.639 2.674v5.342l23.171 13.357L53.138 10.69V5.347l-4.622-2.663-9.243 5.137V2.674L34.633 0v-.002Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m39.01 2.513.25.43-13.44 7.747 4.138 2.385 9.024-5.104.245.433-9.27 5.244-5.133-2.958L39.01 2.513ZM29.717 18.848 6.765 5.62l.249-.43L30.215 18.56v5.318h-.498v-5.03Z" fill="#838383" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M29.833 18.49 52.894 5.197l.25.43L30.081 18.92l-.25-.43Z" fill="#838383" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h60v56.308H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>And that’s exactly how we do it at <a href="//set.studio">Set Creative Studio</a>.</p>
+        </div>
+      </footer>
+    
+  </body>
+</html>

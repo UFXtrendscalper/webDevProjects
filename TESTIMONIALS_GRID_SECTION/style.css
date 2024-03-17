@@ -1,0 +1,155 @@
+:root {
+    /* Primary Colors */
+    --violet: hsl(264, 82%, 70%);
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+  
+    /* Neutral Colors */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    --card-radius: 8px;
+
+    /* font size scale */
+
+    /* space scale */
+}
+/* Global CSS */
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 28px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+/* Blocks */
+.container > article:first-child {
+    background: var(--moderate-violet);
+    color: var(--white);
+    max-width: 80ch;
+}
+.container > article:nth-child(2) {
+    background: var(--very-dark-grayish-blue);
+    color: var(--white);
+    max-width: 38ch;
+}
+.container > article:nth-child(3) {
+    background: var(--white);
+    color: var(--very-dark-grayish-blue);
+    max-width: 38ch;
+}
+.container > article:nth-child(4) {
+    background: var(--very-dark-blackish-blue);
+    color: var(--white);
+    max-width: 80ch;
+}
+.container > article:last-child {
+    background: var(--white);
+    color: var(--very-dark-grayish-blue);
+    max-width: 38ch;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card {
+    border-radius: var(--card-radius);
+    padding: 2em;
+    min-width: 255px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+.grid-col-span-2 {
+    grid-column: span 2;
+    min-width: 510px;
+}
+
+/* Compositions */
+
+/* Utilities */
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.flex {
+    display: flex;
+    gap: 17px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.wrapper {
+    padding-inline: 15vh;
+}
+
+.img-border-color {
+    border: 2px solid var(--violet);
+    
+}
+
+.verified {
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.testimonials {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.quote {
+    font-size: 13px;  
+    opacity: 0.7;
+}
+
+
+/* Adjustments for Responsive Design */
+@media screen and (max-width: 1130px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2-column layout for medium screens */
+    }
+    .grid-col-span-2, .container > article:last-child {
+        grid-column: span 2; /* Make sure large cards fill the available 2 columns */
+    }
+    .wrapper {
+        padding-inline: 5em; /* Reduce padding for medium screens */
+        padding-block: 5em;
+    }
+    .card {
+        min-width: 100%; /* Make sure all cards span full width */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr; /* Change to 1-column layout for small screens */
+    }
+    .grid-col-span-2, .container > article:last-child {
+        grid-column: span 1; /* Make all cards span full width */
+    }
+    .wrapper {
+        padding-inline: 1em; /* Reduce padding for smaller screens */
+    }
+
+}
