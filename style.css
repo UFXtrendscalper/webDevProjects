@@ -1,5 +1,7 @@
 :root {
-
+    /* colors */
+    --color-background: #2F4F4F;
+    --color-white: #fff;
 }
 
 /* Globals */
@@ -8,6 +10,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: var(--color-background);
+    color: var(--color-white);
 }
 header > h1 {
     font-size: 5em;
@@ -18,6 +22,12 @@ main {
 nav {
     gap: 1em;
     font-size: 1.2em;
+}
+nav > a {
+    color: #81C7D4;
+}
+nav > a:hover {
+    color: #66B0C4; 
 }
 
 /* Utilites */
