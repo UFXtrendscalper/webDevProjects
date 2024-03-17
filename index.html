@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Development Projects</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="64x64"
-      href="./images/webDev.ico"
-    />
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Web Development Projects</h1>
-      </header>
-      <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development Projects</title>
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="./images/webDev.ico" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="flex">
+    <h1>Web Development Projects</h1>
+  </header>
+  <main class="flex-column flow">
+    <fieldset>
+      <legend>Card Projects</legend>
+      <nav class="cards flex">
         <a href="./QR-CODE/index.html">QR-Code Card</a>
         <a href="./BLOG-PREVIEW-CARD/index.html">Blog Preview Card</a>
         <a href="./SOCIAL-LINKS-CARD/index.html">Social Links Card</a>
         <a href="./PRODUCT_PREVIEW_CARD/index.html">Product Preview Card</a>
       </nav>
-      <nav>
+    </fieldset>
+    <fieldset>
+      <legend>Section Projects</legend>
+      <nav class="sections flex">
         <a href="./FOUR-CARD-FEATURE-SECTION/index.html">Four Card Feature Section</a>
-        <a href="./TESTIMONIALS_GRID_SECTION/index.html">Testimonials grid section</a>
+        <a href="./TESTIMONIALS_GRID_SECTION/index.html">Testimonials Grid section</a>
       </nav>
-      <nav>
+    </fieldset>
+    <fieldset>
+      <legend>Webpage Projects</legend>
+      <nav class="webpages flex">
         <a href="./SPACE_WEBPAGE/index.html">Space Webpage</a>
         <a href="./RECIPE_WEBPAGE/index.html">Recipe Webpage</a>
+        <a href="./MEET_LANDING_WEBPAGE/index.html">Meet Landing Webpage</a>
       </nav>
-    </div>
-  </body>
+    </fieldset>
+  </main>
+</body>
+
 </html>
