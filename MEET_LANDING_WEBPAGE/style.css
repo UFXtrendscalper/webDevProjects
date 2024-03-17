@@ -1,0 +1,103 @@
+:root {
+    /* colors */
+    --color-ocean-blue: #4D96A9;
+    --color-lavender: #855FB1;
+    --color-deep-blue: #28283D;
+    --color-light-grey: #87879D;
+    --color-sky-blue: #8FE3F9;
+    --color-light-purple: #D9B8FF;
+    --color-white: #FAFAFA;
+
+    --border-radius: 8px;
+
+    /* custom font scale */
+    --step-0-H1: clamp(2.5rem, 1.9718rem + 2.2535vi, 4rem);
+    --step-0-H2: clamp(2rem, 1.8239rem + 0.7512vi, 2.5rem);
+    --step-0-P: clamp(1rem, 0.956rem + 0.1878vi, 1.125rem);
+    /* space scale  */
+    /* Space s: 44px → 64px */
+    --space-s-H1: clamp(44px, 36.9577px + 1.8779vi, 64px);
+    /* Space s: 36px → 44px */
+    --space-s-H2: clamp(36px, 33.1831px + 0.7512vi, 44px);
+    /* Space m: 23px → 26px */
+    --space-m-P: clamp(23px, 21.9437px + 0.2817vi, 26px);
+    /* Space s: 24px → 165px */
+    --space-s-image-gallery-padding: clamp(24px, -25.6479px + 13.2394vi, 165px);
+    /* Space s: 151px → 255px */
+    --space-s-image-width: clamp(151px, 114.3803px + 9.7653vi, 255px);
+    /* Space s: 143px → 242px */
+    --space-s-image-height: clamp(143px, 108.1408px + 9.2958vi, 242px);
+    /* Space l-m: 11px → 30px */
+    --space-l-m-image-gallery-gap: clamp(11px, 4.3099px + 1.784vi, 30px);
+}
+
+/* Global CSS */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--color-white);
+}
+
+h1 {
+    font-size:  var(--step-0-H1); /* 64px-40 */ 
+    line-height: var(--space-s-H1); /* 64px-44 */
+}
+h2 {
+    font-size: var(--step-0-H2); /* 40px-32 */
+    line-height: var(--space-s-H2); /* 44px-36 */
+}
+p {
+    font-size: var(--step-0-P); /* 18px-16 */
+    line-height: var(--space-m-P); /* 26px-26 */
+}
+
+/* Blocks */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overline {
+    font-size: 16px; /* 16 */
+    line-height: 26px; /* 26 */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* 4 */
+}
+.hero-content {
+    text-align: center;   
+    outline: 3px solid red; /* !REMOVE WHEN FINISHED */
+}
+.image-gallery {
+    width: 100%;
+    padding-inline: var(--space-s-image-gallery-padding);
+}
+.image-gallery figure {
+    gap: var(--space-l-m-image-gallery-gap);
+}
+.image-gallery img {
+    width: 23%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+/* Compositions */
+
+/* Utilities */
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}  
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Media Queries */
+
+
