@@ -22,32 +22,36 @@
     <figure class="logo">
       <img src="./assets/logo.svg" alt="illustration 1" style="width: 118px; height: 28px" />
     </figure>
-    <div class="flex">
-      <figure>
-        <img src="./assets/desktop/image-hero-left.png" alt="image-hero-left" />
+    <!-- mobile and tablet hero image -->
+    <figure class="sm-hero-image">
+      <img src="./assets/tablet/image-hero.png" alt="image-hero">
+    </figure>
+    <div class="header-wrapper">
+      <figure style="margin-left: -30px;">
+        <img src="./assets/desktop/image-hero-left.png" alt="image-hero-left"/>
       </figure>
-      <div class="hero-content">
+      <div class="hero-content flex-column">
         <h1>Group Chat <br> for Everyone</h1>
         <p>
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <button>Download v1.3</button>
-        <button>What is it?</button>
+        <div class="btn-wrapper">
+          <button>Download v1.3</button>
+          <button>What is it?</button>
+        </div>
       </div>
-      <figure>
-        <img src="./assets/desktop/image-hero-right.png" alt="image-hero-right" />
+      <figure style="margin-right: -30px">
+        <img src="./assets/desktop/image-hero-right.png" alt="image-hero-right"/>
       </figure>
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main class="flex-column">
-    <section class="circle-1">
-      <div class="">
-        <img src="" alt="CUSTOM CIRCLE">
-        <!-- HOLD THE 01 CIRCLE -->
-      </div>
+    <section class="flex-column" style="width: 56px; height: 140px; z-index: 2;">
+      <div class="v-line"></div>
+      <div class="circle"><span class="flex" style="width: 100%; height: 100%;">01</span></div>
     </section>
     <section class="image-gallery">
       <figure class="flex">
@@ -63,11 +67,9 @@
       <p>Send messages, share files, show your screen, and record your meetings — all in one
         workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </section>
-    <section class="circle-2">
-      <div class="">
-        <img src="" alt="CUSTOM CIRCLE">
-        <!-- HOLD THE 02 CIRCLE -->
-      </div>
+    <section class="flex-column" style="width: 56px; height: 140px; z-index: 2;">
+      <div class="v-line"></div>
+      <div class="circle"><span class="flex" style="width: 100%; height: 100%;">02</span></div>
     </section>
   </main>
 
