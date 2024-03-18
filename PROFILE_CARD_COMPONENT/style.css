@@ -68,7 +68,6 @@ hr {
     position: relative;
     width: 350px;
     height: 374px;
-    outline: 1px solid blue;
     border-radius: var(--border-radius);
     background: var(--white);
     z-index: 1;
