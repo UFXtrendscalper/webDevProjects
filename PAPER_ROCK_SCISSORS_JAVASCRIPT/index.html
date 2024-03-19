@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="flex">
+    <div
+      class="overlay"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      "
+    ></div>
+    <main class="container flex-column">
+      <h1>Rock Paper Scissors</h1>
+      <h2>Score</h2>
+      <div id="playerScore">Player: 0</div>
+      <div id="computerScore">Computer: 0</div>
+      <h3>Result: <span id="result">Make your move</span></h3>
+      <p id="playerChoice">Player: 👊</p>
+      <p id="computerChoice">Computer: 👊</p>
+      <div class="btn flex">
+        <button class="playerHand">👊</button>
+        <button class="playerHand">✋</button>
+        <button class="playerHand">✌️</button>
+        <button id="reset">Reset</button>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
