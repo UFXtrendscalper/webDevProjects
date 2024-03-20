@@ -1,0 +1,150 @@
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+  
+    /* Neutral */
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --radius-card: 15px;
+
+    /* font-size */
+    /* Step 0: 15px → 16px */
+    --step-15-16: clamp(0.9375rem, 0.9155rem + 0.0939vi, 1rem);
+
+    /* space */
+    /* Space s: 327px → 350px */
+    --space-327-350: clamp(20.4375rem, 19.9313rem + 2.1596vi, 21.875rem);
+    /* Space s: 543px → 596px */
+    --space-543-596: clamp(33.9375rem, 32.7711rem + 4.9765vi, 37.25rem);
+    /* Space s: 278px → 302px */
+    --space-278-302: clamp(17.375rem, 16.8468rem + 2.2535vi, 18.875rem);
+    /* Space s: 22px → 33px */
+    --space-22-33: clamp(1.375rem, 1.1329rem + 1.0329vi, 2.0625rem);
+  }
+  
+
+
+/* Global */
+body {
+    font-family: 'Outfit', sans-serif;
+    height: 100%;
+    background-color: var(--very-dark-blue-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    color: var(--soft-blue);
+    font-size: 18px;
+    line-height: 26px;
+}
+h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: var(--space-22-33);
+}
+h1:hover, .user:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+/* Block */
+.card {
+    background-color: var(--very-dark-blue-card-bg);
+    border-radius: var(--radius-card);
+    width: var(--space-327-350); 
+    height: var(--space-543-596);
+    padding: 24px;
+    min-width: 327px;
+    min-height: 543px;
+}
+.wrapper {
+    position:relative;
+    width: 100%;
+    height: var(--space-278-302);
+}
+.wrapper > img:first-of-type {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.imgOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.imgOverlay:hover {
+    background-color: rgba(0, 255, 247, 0.6);
+    cursor: pointer;
+}
+.imgOverlay > img {
+    visibility: hidden;
+}
+.imgOverlay:hover > img {
+    visibility: visible;
+}
+.card > p:first-of-type {
+    margin-block: 1em;
+}
+.pricingInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cryptoPrice, .countDown {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.countDown > img {
+    width: 16px;
+    height: 16px;
+}
+.creatorInfo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.price {
+    color: var(--cyan);
+    font-size: var(--step-15-16);
+    font-weight: 600;
+}
+.time {
+    color: var(--soft-blue);
+    font-size: var(--step-15-16);
+    font-weight: 600;
+}
+.caption {
+    color: var(--soft-blue); 
+    font-size: var(--step-15-16);   
+}
+.user {
+    color: var(--white);
+}
+.avatar{
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+/* Utilities */
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+.line {
+    border: 1px solid var(--very-dark-blue-line);
+    opacity: 0.5;
+    margin-block: 1em;
+
+} 
