@@ -1,0 +1,39 @@
+@font-face {
+    src: url('./Foxy Glam.ttf');
+    font-family: FoxyGlam;
+}
+
+:root {
+    --fw-light: 300;    
+    --fw-regular: 400;    
+    --fw-medium: 500;    
+    --fw-semi-bold: 600;    
+    --fw-bold: 700;  
+    --fw-extra-bold: 800;  
+    --fw-black: 900;  
+
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    }
+h1 {
+    font-family: FoxyGlam, sans-serif;
+    font-weight: var(--fw-bold);
+}
+.box-div {
+    width: 400px;
+    height: 200px;
+    background-color: #1F1E1C;
+    margin-inline: auto;
+    margin-top: 200px;
+    outline: 1px solid red;
+}
+.lh-input {
+    /* height: 30px; */
+    line-height: 50px;  
+}

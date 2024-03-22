@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/* Globals */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* blocks */
+.hero {
+    height: 400px;
+    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHdmdmlrZWR4ZGJ1NXpmc2k1em5mNDFoMzhsd3Rja2phNXAzNTZneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1AeQz5r3xiv0Frfa5I/giphy.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title, .hero-tagline {
+    margin: 0;
+    color: #FAE6D9;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #2E2531;
+}
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 11px;
+}
+.activities {
+    background-color: #FAE6D9;
+}
+.activities-title {
+    font-size: 2rem;
+    padding-block: 2em;    
+}
+.activities-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+.activities-card-wrapper > div > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.activities-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+.guide {
+    margin-block: 3em;
+    display: flex;
+    justify-content: center;
+}
+.guide-card {
+    color: #FAE6D9;
+    background-color: #2E2531;
+    width: 600px;
+    height: 300px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 1em;
+}
+.guide-card > img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #FAE6D9;
+}
+.guide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+/* utilites */
+.merriweather-light {
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .merriweather-black {
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .merriweather-light-italic {
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .merriweather-regular-italic {
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .merriweather-bold-italic {
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .merriweather-black-italic {
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+

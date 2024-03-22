@@ -1,0 +1,82 @@
+/* !todo */
+
+/* all images get from chat gpt */
+/* get an icon */
+/* get a birthday person */
+/* get a birthday box with ribon aka gift cover*/
+
+/*
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image 
+(class vs id vs element selector).
+*/
+
+/*
+Challenge:
+Add a thin blurred border around the <h1>, <h2>, 
+and <h4> using the text-shadow technique you 
+learned in the Space Exploration section. Set
+the blur to 1px and the color to black.
+*/
+
+/*
+Challenge:
+First, wrap the HTML elements in a <div> with an 
+id called "header".
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+/*
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide.
+*/
+
+/*
+Challenge:
+Create the next GIFt (hot.gif). Its HTML structure 
+should be like the previous one, but without the 
+"gift-hint" element.
+
+However, now that you have multiple GIFts on the page,
+you cannot use the "gift-img" class to set the GIF 
+background-image(s) on :hover. Each GIFt will need a 
+unique id that controls which background image that 
+should be shown when hovering over the element.
+*/
+
+/*
+Challenge:
+Create the "genius" and "badass" GIFt sections.
+
+Texts:
+If I had to describe you with ONE word 👇
+
+The only person as badass as you 💪
+
+*/
+
+/*
+Challenge:
+Create the "cheers" GIFt section.
+
+Note: this GIFt should have a height of 200px. 
+Select the #gift-img-cheers id and override 
+the height that the element got from the 
+.gift-img class.
+
+Text: 
+This one's for you, my friend 🥂
+*/
