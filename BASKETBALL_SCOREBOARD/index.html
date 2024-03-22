@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Basketball Score Board</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./cssReset.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h3>HOME</h3>
+                <div class="score" id="home">
+                    <span id="home-score">0</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn" id="home-1" onclick="increaseHomeScore('home-1')">+1</button>
+                    <button class="btn" id="home-2" onclick="increaseHomeScore('home-2')">+2</button>
+                    <button class="btn" id="home-3" onclick="increaseHomeScore('home-3')">+3</button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>GUEST</h3>
+                <div class="score" id="guest">
+                    <span id="guest-score">0</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn" id="guest-1" onclick="increaseGuestScore('guest-1')">+1</button>
+                    <button class="btn" id="guest-2" onclick="increaseGuestScore('guest-2')">+2</button>
+                    <button class="btn" id="guest-3" onclick="increaseGuestScore('guest-3')">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

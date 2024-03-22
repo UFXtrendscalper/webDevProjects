@@ -21,19 +21,10 @@ body {
     padding: 0;
     background-color: #f2f2f2;
     }
-h1 {
-    font-family: FoxyGlam, sans-serif;
-    font-weight: var(--fw-bold);
-}
-.box-div {
-    width: 400px;
-    height: 200px;
-    background-color: #1F1E1C;
-    margin-inline: auto;
-    margin-top: 200px;
-    outline: 1px solid red;
-}
-.lh-input {
-    /* height: 30px; */
-    line-height: 50px;  
-}
+
+.card {
+    width: 50%;
+    outline: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+}    

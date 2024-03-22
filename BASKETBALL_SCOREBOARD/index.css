@@ -1,0 +1,84 @@
+@font-face {
+    src: url("./fonts/CursedTimerUlil-Aznm.ttf");   
+    font-family: LCD; 
+}
+
+:root {}
+
+
+/* Globals */
+body {
+    background: url("./images/bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1D5DB;
+    color: #FFFFFF;
+}
+h3 {
+    font-size: 40px;
+    font-weight: bold;    
+}
+span {
+    display: flex;
+    justify-content: center;
+    font-family: LCD;
+    font-size: 90px;
+}
+
+/* Blocks */
+.container {
+    background-color: #1B244A;
+    width: 575px;
+    height: 385px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 68px;
+    box-shadow: 0 0 40px #FBF68B;
+    border-radius: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.score {
+    width: 155px;
+    height: 120px;
+    color: red;
+    border-radius: 5px;
+    background-color: #080001;
+}
+.btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-family: LCD, sans-serif;
+    border-radius: 5px;    
+    border: 3px solid #9AABD8;
+    color: #9AABD8; 
+    background-color: #1B244A;  
+}
+.btn:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    cursor: pointer;
+    trasition: 0.5s;
+}
+.winner {
+    box-shadow: 0 0 10px #00D404;
+}
+
