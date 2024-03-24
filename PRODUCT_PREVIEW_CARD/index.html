@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Product preview card component</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./cssReset.css">
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+
+<body>
+
+
     <main>
-      <!-- left card -->
-      <div id="leftCard">
-        <picture>
-          <source
-            media="(max-width: 500px)"
-            srcset="./images/image-product-mobile.jpg"
-          />
-          <img src="./images/image-product-desktop.jpg" alt="perfume-image" />
-        </picture>
-      </div>
+        <article class="product flex-group">
+            <picture>
+                <source media="(max-width: 430px)" srcset="./images/image-product-mobile.jpg">
+                <img class="product-img" src="./images/image-product-desktop.jpg" alt="Bottle of perfume by chanel">
+            </picture>
 
-      <!-- right card  -->
-      <div id="rightCard">
-        <div id="innerCard">
-          <p id="label">PERFUME</p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p id="description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div id="price-component">
-            <h2>$149.99</h2>
-            <h3>$169.99</h3>
-          </div>
-          <button>
-            <img src="./images/icon-cart.svg" alt="cart-image">
-            Add to Cart
-          </button>
-        </div>
-      </div>
+            <div class="product-content">
+                <p class="product-category">Perfume</p>
+            
+                <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+            
+                <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                
+                <div class="product-wrapper flex-group">
+                    <p class="current-price">$149.99</p>
+                    <p class="original-price">$169.99</p>
+                </div>
+            
+                <button class="btn">Add to Cart</button>
+            </div>
+        </article>    
     </main>
 
-    <footer>Coded by Sean.</footer>
-  </body>
+
+
+</body>
+
 </html>

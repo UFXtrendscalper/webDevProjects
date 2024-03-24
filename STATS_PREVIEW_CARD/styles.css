@@ -1,0 +1,34 @@
+:root {
+
+/* ### Primary */
+--very-dark-blue-main-background: hsl(233, 47%, 7%);
+--dark-blue-card-background: hsl(244, 38%, 16%);
+--soft-violet-accent: hsl(277, 64%, 61%);
+
+/* ### Neutral */
+--White-main-heading-stats: hsl(0, 0%, 100%);
+--Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+/* font weights */
+--font-weight-light: 300;
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-semi-bold: 600;
+--font-weight-bold: 700;
+--font-weight-extra-bold: 800;
+--font-weight-black: 900;
+
+
+}
+
+/* Globals */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;   
+    height: 100vh; 
+    background: var(--very-dark-blue-main-background); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
