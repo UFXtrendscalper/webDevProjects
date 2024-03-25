@@ -1,0 +1,97 @@
+:root {
+    --ff-Karla: "Karla", sans-serif;
+    --ff-Inter: "Inter", sans-serif;
+
+    /* space */
+    /* Space s: 16px → 445px */
+    --space-16-445: clamp(1rem, -8.441rem + 40.2817vi, 27.8125rem);
+}
+
+/* globals */
+body {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-family: var(--ff-Karla);
+    margin: 0 var(--space-16-445);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* blocks */
+.passwordGenerator {
+    background-color: #1F2937;
+    padding: 115px 52px;
+    max-width: 550px;
+}
+.pg-title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -2.5%;
+}
+.pg-description {
+    color: #D5D4D8;
+    font-family: var(--ff-Inter);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10px 0 51px 0;
+    
+}
+.btn {
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--ff-Inter);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 9px 15px;
+    cursor: pointer;
+}
+.line {
+    background-color: #2F3E53;
+    height: 1px;
+    margin-block: 35px;
+    opacity: 0.2;
+}
+.passwords {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.pg-one, .pg-two {
+    display: flex;
+    color: #55F991;
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pg-one:hover, .pg-two:hover {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+/* utilities */
+.green-txt {
+    color: #4ADF86;
+}
+
+/* media query */
+@media (max-width: 768px) {
+    .passwordGenerator {
+        text-align: center;
+    }
+    .passwords {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .pg-one, .pg-two {
+        width: 100%;
+    }
+}
