@@ -1,0 +1,99 @@
+:root { 
+    
+}
+
+/* globals */
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background-color: #1B1924;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+/* blocks */
+.endorsement {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+    max-width: 390px;
+    margin-top: 100px;
+
+}
+.end-img {
+    width: 90px;
+    height: 90px;
+}
+.end-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.to-from-wrapper {
+    display: flex;
+    gap: 0 10px;
+}
+.end-txtArea, .end-from, .end-to {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #444059;  
+    color: #8F8F8F;
+    border-radius: 8px;
+    border: none;
+}
+.end-txtArea {
+    height: 118px;
+    word-wrap: break-word; 
+    padding: 19px;
+    resize: none;
+}
+.end-from, .end-to {
+    height: 40px;
+    text-align: center;
+}
+.end-btn {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28A9F1;
+    color: #04131C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.end-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding-block: 10px;
+}
+.endorsment-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px 0;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    background-color: #FFFFFF;
+    color: #1B1924;
+    padding: 14px;
+    font-size: 14px;
+}
+.signature-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+}
+.message-time {
+    font-size: 12px;
+}
+/* utilities */
