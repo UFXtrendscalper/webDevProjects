@@ -7,9 +7,11 @@ body {
     align-items: center;
 }
 
-
-li {
-    font-size: 3rem;
-    list-style-type: none;
+a:hover, a:active {
+    color: #d4b44c;
 }
-
+a {
+    font-size: 24px;
+    color: #EF5839;
+    text-decoration: underline dotted;
+}

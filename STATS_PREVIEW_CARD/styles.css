@@ -23,12 +23,7 @@
 }
 
 /* Globals */
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;   
-    height: 100vh; 
-    background: var(--very-dark-blue-main-background); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+/* utilities */
+
+/* media queries */

@@ -1,0 +1,68 @@
+:root{
+
+}
+
+/* globals */
+body{
+    background-color: #FFFFFF;
+    font-family: "Source Sans 3", sans-serif;  
+    font-size: 13px;
+    max-width: 375px;  
+    margin: 0 auto;
+    color: #000000;
+
+}
+header {
+    padding: 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid #C6C6C6;
+}
+h1 {
+    font-size: 13px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+/* blocks */
+.header-title {
+    width: 127px;
+    height: 33px;
+}
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.main-img {
+    height: 375px;
+}
+.creator-info {
+    align-items: center;
+    padding: 10px;
+    column-gap: 7px;
+}
+.post-feedback {
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 20px 10px;
+}
+.icon-wrapper {
+    column-gap: 20px;
+}
+.icon-wrapper > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* utilities */
+.flex {
+    display: flex;
+}
+.icon-size {
+    width: 20px;
+    height: 20px;
+}
+.bold-text {
+    font-weight: bold;
+}
