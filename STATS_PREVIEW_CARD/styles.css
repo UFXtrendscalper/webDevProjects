@@ -19,11 +19,121 @@
 --font-weight-extra-bold: 800;
 --font-weight-black: 900;
 
+/* font-size */
+/* Step 0: 28px → 36px */
+--step-28-36: clamp(1.75rem, 1.5761rem + 0.8696vi, 2.25rem);
+
+/* space */
+/* Space s: 32px → 44px */
+--space-32-44: clamp(2rem, 1.7391rem + 1.3043vi, 2.75rem);
 
 }
 
 /* Globals */
+body {
+    height: 100vh;
+    display: flex;
+    margin-inline: 1em;
+    color: var(--White-main-heading-stats);
+    background-color: var(--very-dark-blue-main-background);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
 
+/* blocks */
+.stats_card {
+    margin: auto;
+    width: 1110px;
+    height: 446px;
+    background-color: var(--dark-blue-card-background);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.stats_wrapper, .stats_img {
+    flex: 1 50%;
+}
+.stats_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 72px;
+}
+.stats_img {
+    position: relative;
+    overflow: hidden;
+}
+.color_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-violet-accent);
+    mix-blend-mode: multiply;
+    z-index: 1;
+}    
+.stats_img > picture > img {
+    width: 100%;
+    height: 100%;
+}
+.stats_title {
+    font-size: var(--step-28-36);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--space-32-44);
+}
+.stats_content {
+    font-weight: var(--font-weight-regular);
+    line-height: 25px;
+    max-width: 40ch;
+    margin: 25px 0 72px 0;
+}
+.stats_container {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+}
+.stats_catagory {
+    font-size: 12px;
+    font-weight: var(--font-weight-regular);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    
+}
 /* utilities */
+.flex {
+  display: flex;
+}
+.stats_gap {
+    gap: 63px;
+}
+.purple_text {
+    color: var(--soft-violet-accent);
+}
 
 /* media queries */
+@media (max-width: 768px) {
+    .stats_img > picture > img {
+        width: 100%;
+        height: auto; 
+        object-fit: cover; 
+    }
+    .stats_card {
+        flex-direction: column-reverse;
+        width: 327px;
+        height: 780px;
+    }
+    .stats_wrapper {
+        padding-inline: 30px;
+        align-items: center;
+        text-align: center;
+        padding-block: 40px 32px;
+    }
+    .stats_wrapper > div:first-of-type {
+        flex-direction: column;    
+    } 
+    .stats_gap {
+        gap: 24px;
+    }
+    .stats_content {
+        margin: 16px 0 40px 0;
+    }
+}
