@@ -1,0 +1,141 @@
+
+
+/* globals */
+body{
+    height: 100vh;
+    max-width: 600px;
+    font-family: "Smythe", system-ui;
+    font-size: 16px;
+    margin: auto;
+    color: #000000;
+    background-color: #FFFFFF;
+} 
+main{
+    width: 90%;
+    margin-top: 67px;
+    margin-inline: auto;
+
+}  
+h2{
+    font-weight: 400;
+    font-size: 28px;
+}
+hr{
+    margin: 30px 0 15px 0;
+    color: #393333;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+}
+/* blocks */
+.menu_items {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 50px;
+    
+}
+.img {
+    font-size: 70px;
+}
+.ingredients{
+    color: #8B8B8B;
+}
+.price{
+    font-size: 20px;
+}
+.add-btn {
+    display: flex;
+    font-family: "Inter", system-ui;
+    cursor: pointer;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%; /* Ensures the circle shape */
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    user-select: none; 
+}
+.add-btn > span {
+    margin: auto;
+    font-size: 30px; 
+    font-weight: 200;
+    transform: translateY(-2px);
+    color: #3C3C3C;
+}
+.order-title {
+    text-align: center;
+    margin: 45px 0 64px 0;
+}
+.order-item {
+    gap: 13px;    
+}
+.order-btn {
+    border: none;    
+    font-size: 12px;
+    font-familiy: Verdana;
+    color: #BBBBBB;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.item-price {
+    margin-left: auto;
+    font-size: 20px;
+}
+.pay-btn{
+    width: 100%;
+    height: 50px;
+    margin-block: 60px;  
+    background-color: #16DB99;  
+    border: none;
+    color: #FFFFFF;
+    font-familiy: Verdana;
+    cursor: pointer;
+    font-weight: bold;
+}
+.modal-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    max-width: 525px;
+    height: 500px;
+    font-family: Verdana;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: radius: 4px;
+    color: #757575;
+}
+.form-input:focus{
+    outline: none;
+}
+.thank-you{
+    width: 85%;
+    background-color: #ECFDF5;
+    text-align: center;
+    margin: 25px auto;
+    padding: 30px 5px;
+}
+/* utility */
+.flex{
+    display: flex;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Ordering App</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Smythe&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./cssReset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./asssets/header.png" alt="Gourmet Burger at Jimmy’s Diner - Home of the Best Burgers and Pizzas.">
+    </header>
+    <main>
+        <section class="menu" id="menu-el"></section>
+        <section id="order" class="order hidden">
+            <h2 class="order-title">Your order</h2>
+            <div id="checkout"></div>
+            
+            <button id="pay-btn" class="pay-btn">Complete order</button>
+        </section>
+    </main>
+    <div id="popup-el"  class="modal-popup hidden">
+        <form id="pay-form">
+            <h3>Enter card details</h3>
+            <input id="customer-name" name="customer-name" class="form-input" type="text" placeholder="Enter your name" required>        
+            <input id="customer-card" name="customer-card" class="form-input" type="text" placeholder="Enter card number" required>        
+            <input id="customer-cvv" name="customer-cvv" class="form-input" type="text" placeholder="Enter CVV" required>    
+            <button id="form-btn" type="submit" class="pay-btn">Pay</button>    
+        </form>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
+
+
