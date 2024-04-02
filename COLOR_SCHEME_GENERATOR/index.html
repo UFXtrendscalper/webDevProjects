@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./cssReset.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="color-picker">
+        <form id="color-form" class="color-form">
+            <label for="color-el" aria-label="Choose a color:"></label>
+            <input id="color-el" class="color-el" type="color" name="color">
+            <label for="dropdown-el" class="dropdown-el-label" aria-label="Select color scheme:"></label>
+            <select id="dropdown-el" class="dropdown-el" name="color-scheme">
+                <option value="Monochrome">Monochrome</option>
+                <option value="Monochrome-dark">Monochrome-dark</option>
+                <option value="Monochrome-light">Monochrome-light</option>
+                <option value="Analogic">Analogic</option>
+                <option value="Complement">Complement</option>
+                <option value="Analogic-complement">Analogic-complement</option>
+                <option value="Triad">Triad</option>
+            </select>
+            <button id="btn" class="btn" type="submit">Get color scheme</button>
+        </form>
+        <div id="show-img" class="show-img"></div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
