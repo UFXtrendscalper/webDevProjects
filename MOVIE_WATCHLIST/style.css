@@ -1,0 +1,162 @@
+:root{
+
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    min-width: 500px;
+    
+}
+/* HEADER SECTION */
+header{
+    background-image: url('./assets/hero.png');
+    background-size: cover;
+    height: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2.63rem;
+}
+h1{
+    font-size: 2.63rem;
+    font-weight: 800;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav > a {
+    font-size: 14px;
+    font-weight: bold;
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* MAIN SECTIONN */
+.search-container{
+    margin-top: -1.25em;
+    display: flex;
+    justify-content: center;
+}
+.search-form{
+    display: flex;
+    background-color: #2E2E2F;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.search-img{
+    padding: 0.625em;
+} 
+.search-input{
+    border: none;
+    height: 100%;
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+}
+.search-input:focus{
+    outline: none;
+}
+.search-btn{
+    border: none;
+    height: 100%;
+    padding-inline: 2.1875em;
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.movie-content{
+    margin: 5em auto;
+    min-width: 430px;
+    gap: 1.25em;
+}
+
+.cinema-explorer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+}
+.explore{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E2E2F;
+}
+.
+/* MOVIES CARD */
+.movie-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.movie-card{
+    width: 70%;
+    min-width: 460px;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #787878;
+    margin: 2em auto;
+}
+.movie-img > img {
+    height: 350px;
+}
+.movie-description{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.title-wrapper{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.watchlist-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+    margin: 5em auto;
+}
+.mt-watchlist{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #787878;
+
+}
+.watchlist-wrapper{
+    display: flex;
+    gap: 0.438em;    
+}
+
+.plot{
+    max-width: 40ch;
+}
+.add-to-watchlist, .remove-from-watchlist {
+    gap: 0.5em;
+    margin-top: auto;
+}
+.remove-from-watchlist{
+    color: #FF0000;
+}
+.star{
+    width: 1em;
+    height: 1em;
+    margin-left: auto;
+}
+.minus-icon, .plus-icon{
+    cursor: pointer;
+}
+/* utility */
+.flex{
+    display: flex;
+}
