@@ -1,0 +1,13 @@
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #161619;
+    padding-block: 1.25em;
+    border-radius: 0 0 10px 10px;
+}
+.footer > img{
+    cursor: pointer;
+}
+

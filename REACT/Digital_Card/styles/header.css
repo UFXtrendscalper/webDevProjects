@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.9375em;
+}
+.header--name{
+    font-size: 1.563rem;
+    font-weight: bold;
+    padding-top: 1.25em;
+}
+.header--position{
+    color: #F3BF99;
+    font-size: 0.813rem;
+    font-weight: 400;
+    padding-block: 0.375em 0.5625em;
+}
+.header--email{
+    color: #F5F5F5;
+    font-size: 0.625rem;
+}

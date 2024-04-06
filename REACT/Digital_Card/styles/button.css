@@ -1,0 +1,33 @@
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.btn{
+    width: 115px;    
+    padding-block: 0.6em;
+    border-radius: 6px; 
+    font-size: 0.875em;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn--email{
+    color: #374151;
+    background-color: #FFFFFF;
+}
+.btn--email:before{
+    content: url('/src/assets/Icon.png');
+    color: #1E1F26;
+    margin-right: 0.5em;
+}
+.btn--linkedIn{
+    background-color: #5093E2;
+}
+.btn--linkedIn:before{
+    content: url('/src/assets/linkedin.png');
+    color: #1E1F26;
+    margin-right: 0.5em;
+    width: 13px;
+}

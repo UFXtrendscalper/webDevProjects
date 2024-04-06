@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 300px;
+    padding-inline: 2.25em;
+    margin-block: 2.06em 1.5em;
+}
+.main--title{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3125em;    
+}
+.main--description{
+    font-size: 10px; // 10px
+}
