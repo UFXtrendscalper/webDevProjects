@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1.75em;
+    background: linear-gradient(90deg, #672280 1%, #A626D3 100%);
+    width: 100%;
+    color: white;
+    gap: 0.5em;
+}
+.header--img{
+    width: 1.88em;
+    height: 1.56em;    
+}
+.header--title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.header--description{
+    margin-left: auto;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
