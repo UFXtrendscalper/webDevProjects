@@ -4,7 +4,7 @@ const cryptoAPIBase = 'https://api.coingecko.com/api/v3/coins/'
 const coins = ['bitcoin', 'ethereum']
 const cryptoContainer = document.getElementById('crypto-container')
 const timeEl = document.getElementById('time')
-const timeInterval = ((1000 * 60) * 15) // set the interval to update every 15 minutes
+const timeInterval = ((1000 * 60) * 30) // set the interval to update every 15 minutes
 const weatherAPI = 'https://apis.scrimba.com/openweathermap/data/2.5/weather?appid=60cc44b934883065b139da58aea50e0a&units=metric'
 const weatherContainer = document.getElementById('weather-container')
 
@@ -77,17 +77,24 @@ function displayTime() {
 }
 
 // Function to set the background image
+
+// Function to set the background image with smooth transition
 async function setBackground() {
     try {
         const response = await fetch(backgroundImageAPI)
         const data = await response.json()
-        document.body.style.backgroundImage = `url(${data.urls.full})`
-        const authorName = data.user.name || 'Anonymous'
-        document.getElementById('author').textContent = `By: ${authorName}`
-        const location = data.user.location || 'Unknown'
-        document.getElementById('location').textContent = `Location: ${location}`
+        const imgUrl = data.urls.full;
+        const image = new Image();
+        image.src = imgUrl;
+        image.onload = () => {
+            document.body.style.backgroundImage = `url(${imgUrl})`;
+            const authorName = data.user.name || 'Anonymous';
+            document.getElementById('author').textContent = `By: ${authorName}`;
+            const location = data.user.location || 'Unknown';
+            document.getElementById('location').textContent = `Location: ${location}`;
+        }
     } catch (err) {
-        document.body.style.backgroundImage = `url('./assets/bg_fallback.jpg')`
+        document.body.style.backgroundImage = `url('./assets/bg_fallback.jpg')`;
     }
 }
 
@@ -160,4 +167,4 @@ initDashboard()
 
 // Set interval to update the dashboard
 setInterval(initDashboard, timeInterval)
-setInterval(displayTime, 60000)
+setInterval(displayTime, 1000)

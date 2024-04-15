@@ -32,6 +32,7 @@ h1.time{
 .crypto{
     display: flex;
     margin-bottom: 1em;
+    padding: 1em;
     gap: 1em;
     /* make a light transparent background */
     background-color: rgba(255, 255, 255, 0.2);
@@ -58,4 +59,16 @@ h1.time{
 }
 #location, #author{
     font-size: 1.5rem;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.attribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.todo{
+    /* align-self: flex-end; */
 }
