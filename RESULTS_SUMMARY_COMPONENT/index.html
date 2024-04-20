@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Results summary component</title>
+
+  <link rel="stylesheet" href="./cssReset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main>
+    <div class="left-card">
+      <h1>Your Result</h1>
+      <div class="circle">
+        <div class="inner-circle">
+          <span class="avg">76</span>
+          <span class="block">of 100</span>
+        </div>
+      </div>
+      <span>Great</span>
+      <p>You performance exceeded 65% of the people conducting the test here.</p>
+    </div>
+    
+    <div class="right-card">
+      <h2 class="summary">Summary</h2>
+      <!-- rendered from the data and javascript -->
+      <div id="summary-comp" class="summary-comp">
+      </div>
+      <button class="btn">Continue</button>
+    </div>
+  </main>
+
+
+  
+  <script src="./index.js" type="module"></script>  
+</body>
+</html>

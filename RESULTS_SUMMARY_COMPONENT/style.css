@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    font-weight: 100 900;
+}
+
+:root {
+    /* Primary */
+    --clr-light-red: hsl(0, 100%, 67%);
+    --clr-orangey-yellow: hsl(39, 100%, 56%);
+    --clr-green-teal: hsl(166, 100%, 37%);
+    --clr-cobalt-blue: hsl(234, 85%, 45%);
+    
+    /* Gradients */
+    --clr-light-slate-blue-bg: hsl(252, 100%, 67%);
+    --clr-light-royal-blue-bg: hsl(241, 81%, 54%);
+    
+    --clr-violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --clr-persian-blue-circle: hsla(241, 72%, 46%, 0);
+    
+    /* Neutral */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pale-blue: hsl(221, 100%, 96%);
+    --clr-light-lavender: hsl(241, 100%, 89%);
+    --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* font size */
+    /* Step 0: 18px → 24px */
+    --step-18-24: clamp(1.125rem, 0.993rem + 0.5634vi, 1.5rem);
+    /* Step 0: 56px → 72px */
+    --step-56-72: clamp(3.5rem, 3.1479rem + 1.5023vi, 4.5rem);
+    /* Step 0: 24px → 32px */
+    --step-24-32: clamp(1.5rem, 1.3239rem + 0.7512vi, 2rem);
+    /* Step 0: 16px → 18px */
+    --step-16-18: clamp(1rem, 0.956rem + 0.1878vi, 1.125rem);
+    /* Step 0: 140px → 200px */
+    --step-140-200: clamp(8.75rem, 7.4296rem + 5.6338vi, 12.5rem);
+    /* Step 0: 100px → 142.85px */
+    --step-100-142: clamp(6.25rem, 5.307rem + 4.0235vi, 8.9281rem);
+  }
+
+  /* global */
+body {
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--clr-pale-blue);
+
+}
+/* 7755FF 2F2CE9*/
+/* blocks */
+.left-card{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-width: 375px;
+    height: 356px;
+    background-image: linear-gradient(180deg, #7755FF, #2F2CE9);
+    border-radius: 0 0 32px 32px;   
+}
+.left-card > h1{
+    font-size: var(--step-18-24);
+    font-weight: bold;
+    color: hsla(241, 100%, 89%, 0.9);
+    padding-top: 1.33em;
+}
+.left-card > span{
+    color: white;
+    font-size: var(--step-24-32);
+    font-weight: 800;
+}
+.left-card > p{
+    color: hsla(241, 100%, 89%, 0.8);
+    font-size: var(--step-16-18);
+    font-weight: 500;
+    max-width: 30ch;
+}
+.circle{
+    position: relative;
+    width: var(--step-140-200);
+    height: var(--step-140-200);
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--clr-violet-blue-circle), var(--clr-persian-blue-circle));
+}
+.inner-circle{
+    width: var(--step-100-142);
+    height: var(--step-100-142);
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.avg{
+    font-size: var(--step-56-72);
+    font-weight: 800;
+    color: var(--clr-white);
+}
+.inner-circle > span:nth-child(2){
+    font-size: var(--step-16-18);
+    font-weight: 700;
+    color: hsla(241, 100%, 89%, 0.5);
+    margin-top: 0.2em;
+}
+.right-card{
+    gap: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.875em;
+    background-color: var(--clr-white);
+}
+.summary{
+    font-size: var(--step-18-24);
+    font-weight: bold;
+    color: var(--clr-dark-gray-blue);
+}
+.summary-comp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card{
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--clr-dark-gray-blue);
+    font-weight: 500;
+    gap:4px;    
+}
+.reaction-summary{
+    background-color: #FFF6F6;
+}
+.red{
+    color: var(--clr-light-red);
+}
+.memory-summary{
+    background-color: #FFFAF0;
+}
+.yellow{
+    color: var(--clr-orangey-yellow);
+}
+.verbal-summary{
+    background-color: #F0FAFF;
+}
+.green{
+    color: var(--clr-green-teal);
+}
+.visual-summary{
+    background-color: #F0FDFF;
+}
+.blue{
+    color: var(--clr-cobalt-blue);
+}
+.score{
+    margin-left: auto;
+    font-weight: bold;
+    color: var(--clr-dark-gray-blue);
+}
+.btn{
+    font-size: 1.125rem;
+    width: 100%;
+    background-color: #303B59;
+    color: #FFFFFF;
+    border-radius: 128px;
+    border: none;
+    padding: 0.94em 6.666em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(180deg, #7755FF , #2F2CE9  );
+}
+/* utilities */
+.flex {
+    display: flex;
+}
+.block{
+    display: block;
+}
+
+/* media query */
+@media (min-width: 1400px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        border-radius: 32px;
+        display: flex;
+        width: 736px;
+        height: 512px;
+        overflow: hidden;
+        background-color: var(--clr-white);
+    } 
+    .left-card{
+        border-radius: 32px;
+        height: 100%;
+    }
+     
+}
